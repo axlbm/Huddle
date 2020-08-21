@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    /* width: 100%; */
     /* background-position:right; */
 }
 /*------------MAIN SECTION-----------*/
@@ -13,6 +14,7 @@ body {
     
 }
 .main-container {
+    /* width: 100vw; */
     display: flex;
     margin-top: 60px;
     margin-left: 70px;
@@ -58,7 +60,7 @@ body {
 .social-container {
     display: flex;
     justify-content: flex-end;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-right: 80px;
 }
 .socialNetwork {
@@ -82,21 +84,168 @@ body {
 /*---------MEDIAQUERIES----------*/
 
 @media screen and (max-width:1440px) {
-    
+    .main-image img {
+        height: 500px;
+    }
+    .social-container {
+        /* margin-top: 50px; */
+        margin-bottom: 50px;
+    }
 }
 
 @media screen and (max-width:1024px) {
-    
+    .main-container {
+        margin-left: 40px;
+    }
+    .main-image img {
+        height: 400px;
+    }
+    .main-content {
+        margin-left: 15px;
+    }
+    .main-content h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .main-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .btn button {
+        height: 40px;
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .social-container {
+        /* margin-top: 150px; */
+    }
 }
 
 @media screen and (max-width:768px) {
+    body {
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: contain;
+        background-attachment: scroll;
+    }
+    .main-logo img {
+        height: 50px ;
+    }
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+        grid-gap: 50px;
+        justify-items: center;
+        margin-right: 5%;
+    }
+    .main-content {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .main-content h1 {
+        font-size:30px;
+        font-weight: 600;
+        
+    }
+
+    .main-content p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .btn button {
+        width: 200px;
+        height: 45px;
+    }
+
+    .social-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
     
 }
 
 @media screen and (max-width:425px) {
-    
+    .br-title {
+        display: inline;
+    }
+    br {
+        display:none;
+    }
+    .main-logo img {
+        height: 40px;
+        margin-left: 35px;
+        margin-bottom: 5%;
+    }
+    .main-image img {
+        height:250px;
+        
+    }
+
+    .main-container {
+        margin: 50px auto;
+    }
+    .main-content {
+        margin: 0 10px;
+    }
+    .main-content h1 {
+        font-size: 25px;
+    }
+    .main-content p {
+        font-size: 14px;
+    }
+    .btn button {
+        width: 225px;
+    }
+
+    .social-container {
+        margin-right: 0;
+    }
+    .socialNetwork {
+        margin: 0 ;
+    }
 }
 
 @media screen and (max-width:320px) {
-    
+    .br-title {
+        display: inline;
+    }
+    br {
+        display:none;
+    }
+    .main-content {
+        margin: 0 29px;
+    }
+    .main-logo img {
+        height: 35px;
+        display: flex;
+        margin: 30px 0 60px 25px;
+    }
+    .main-image img {
+        height: 200px;
+        width: 270px;
+    }
+
+    .main-content h1 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .social-container {
+        margin-top: 80px;
+    }
+    .socialNetwork .fa ,.fab {
+        font-size: 15px;
+        padding: 7px 8px;
+        font-size: 18px;
+     
+    }
+
+    .socialNetwork .fa {
+        padding: 7px 10px;
+    }
 }
