@@ -210,6 +210,28 @@ body {
         margin: 0 ;
     }
 }
+@media screen and (max-width:375px) {
+    .main-logo img {
+        margin-left: 25px;
+    }
+
+    .main-content {
+        margin: 0 45px;
+    }
+
+    .main-image img {
+        width: 325px;
+    }
+    .socialNetwork .fa ,.fab {
+        font-size: 15px;
+        padding: 10px 12px;
+        font-size: 18px;
+     
+    }
+    .socialNetwork .fa {
+        padding: 10px 15px;
+    }
+}
 
 @media screen and (max-width:320px) {
     .br-title {
@@ -246,6 +268,6 @@ body {
     }
 
     .socialNetwork .fa {
-        padding: 7px 10px;
+        padding: 7px 15px;
     }
 }
