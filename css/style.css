@@ -11,6 +11,7 @@ body {
 .main-logo img {
     height: 60px;
     margin: 50px 70px;
+    display: block;
     
 }
 .main-container {
@@ -22,23 +23,24 @@ body {
 }
 .main-image img {
     height: 600px;
+    display: block;
 }
+
 .main-content {
-    margin:50px 0 0 60px;
+    margin:50px 0 0 100px;
 }
 .main-content h1 {
     color: white;
     font-family:'Poppins', sans-serif; 
     font-weight: 600;
-    font-size:45px;
+    font-size:50px;
     line-height: 60px;
 }
 .main-content p {
     color: white;
     font-family:'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 25px;
-
+    font-size: 25px;
+    line-height: 35px;
 }
 /*-----------BTN SECTION-----------*/
 .btn button {
@@ -84,6 +86,7 @@ body {
 /*---------MEDIAQUERIES----------*/
 
 @media screen and (max-width:1440px) {
+
     .main-image img {
         height: 500px;
     }
@@ -91,11 +94,27 @@ body {
         /* margin-top: 50px; */
         margin-bottom: 50px;
     }
+
+    .main-content {
+        margin:50px 0 0 60px;
+    }
+
+    .main-content h1 {
+        font-size:45px;
+    }
+
+    .main-content p {
+
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+
 }
 
 @media screen and (max-width:1024px) {
-    .main-container {
-        margin-left: 40px;
+    .main-logo img {
+        margin-left: 60px;
     }
     .main-image img {
         height: 400px;
@@ -119,7 +138,7 @@ body {
     }
 
     .social-container {
-        /* margin-top: 150px; */
+        margin-top: 150px;
     }
 }
 
@@ -133,6 +152,7 @@ body {
     }
     .main-logo img {
         height: 50px ;
+        /* margin-left: 70px; */
     }
     .main-container {
         display: grid;
@@ -183,7 +203,7 @@ body {
         margin-bottom: 5%;
     }
     .main-image img {
-        height:250px;
+        height:200px;
         
     }
 
@@ -213,14 +233,15 @@ body {
 @media screen and (max-width:375px) {
     .main-logo img {
         margin-left: 25px;
+        display: inline-block;
     }
 
-    .main-content {
+    /* .main-content {
         margin: 0 45px;
-    }
+    } */
 
     .main-image img {
-        width: 325px;
+        width: 300px;
     }
     .socialNetwork .fa ,.fab {
         font-size: 15px;
@@ -240,13 +261,13 @@ body {
     br {
         display:none;
     }
-    .main-content {
+    /* .main-content {
         margin: 0 29px;
-    }
+    } */
     .main-logo img {
         height: 35px;
         display: flex;
-        margin: 30px 0 60px 25px;
+        margin: 30px 0 0 25px;
     }
     .main-image img {
         height: 200px;
